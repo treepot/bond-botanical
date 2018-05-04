@@ -1,0 +1,51 @@
+RewriteEngine on
+#RewriteOptions MaxRedirects=2
+#RewriteBase /
+
+#httpsへリダイレクト
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^.*/index.php
+RewriteRule ^(.*)index\.php$ /cs/$1 [R=301,L]
+
+RewriteRule ^/(.*)/$ /$1.php
+#RewriteRule ^whats_new/$ whats_new.php
+RewriteRule ^order/$ order.php
+#RewriteRule ^wedding/$ wedding.php
+#RewriteRule ^works/$ works.php
+#RewriteRule ^shop/$ shop.php
+#RewriteRule ^contact/$ contact.php
+#RewriteRule ^(.*)round/$ $1round.php
+#RewriteRule ^(.*)long/$ $1long.php
+#RewriteRule ^/contact/check/$ /inc/check.php
+
+# php拡張子なしでもアクセス可にする
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php
+
+# 拡張子が付いていたら、リダイレクト
+#RewriteCond %{REQUEST_URI} \.[^/\.]+$
+#RewriteRule ^(.*).php$ /$1/ [L,R]
+
+# URLに.(ドット)を含まない場合はディレクトリと見なして末尾スラッシュ補完
+#RewriteCond %{REQUEST_URI} !/$
+#RewriteCond %{REQUEST_URI} !\.[^/\.]+$
+#RewriteRule .* %{REQUEST_URI}/ [L,R]
+
+#Basic認証
+#AuthUserFile /home/users/0/lolipop.jp-2684e7861272dde5/web/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName “ID、パスワードを入力してください。”
+#AuthType Basic
+#require valid-user
+
+ErrorDocument 403 /cs/not_found.php
+ErrorDocument 404 /cs/not_found.php
+ErrorDocument 500 /cs/not_found.php
+
+
+# BEGIN WordPress
+
+# END WordPress

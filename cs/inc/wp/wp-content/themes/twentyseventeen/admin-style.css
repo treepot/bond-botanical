@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+#adminmenumain,
+.update-nag,
+#wpfooter,
+#wp-admin-bar-root-default,
+#contextual-help-wrap,
+#contextual-help-link-wrap,
+#categorychecklist>#category-1,
+#category-adder,
+#category-tabs,
+#postbox-container-2,
+#formatdiv,
+#tagsdiv-post_tag,
+#postimagediv,
+.post-new-php #screen-meta,
+.post-php #screen-meta,
+.post-new-php #screen-options-link-wrap,
+.post-php #screen-options-link-wrap,
+#titlediv>.inside,
+#minor-publishing-actions,
+#dashboard_right_now{
+	display:none !important;
+}
+#wpcontent{
+  margin-left: 0 !important;
+}
+#wpbody-content{
+	padding-bottom:0 !important;
+}
+#category-all{
+	background:none !important;
+	border:none !important;
+}
+#wpadminbar{
+	background: #FFF !important;
+	border-bottom: 1px solid #EEE;
+}
+#wpadminbar .ab-item, #wpadminbar #wp-admin-bar-user-info .display-name{
+	color:#333 !important;
+}
+#wpadminbar, #wp-toolbar, #wp-admin-bar-top-secondary, #wp-admin-bar-my-account>.ab-item{
+	height:50px !important;
+}
+#wp-admin-bar-my-account>.ab-item{
+	line-height:50px !important;
+}
+
+#wpadminbar .ab-top-menu>li.menupop.hover>.ab-item, #wpadminbar .ab-top-menu>li.menupop:hover>.ab-item, #wpadminbar .menupop .ab-sub-wrapper{
+	background: #EEE !important;
+}
+#wp-admin-bar-user-actions>li>a:hover{
+	opacity:.7 !important;
+}
+#wpwrap{
+  top: 38px !important;
+}
+#screen-meta{
+	border-top: 1px solid #ddd !important;
+}
+#wp-toolbar{
+	display:inline-block;
+	float:right;
+}
+#wpadminbar>a{
+	font-size:14px;
+	line-height:50px;
+	text-decoration:none;
+	color: #333;
+	padding:0 10px;
+	display:inline-block;
+	transition: background-color .3s;
+}
+#wpadminbar>a:hover{
+	background-color:#EEE;
+}
+
+.login h1 a{
+	background-image:url(http://ficus.win/bois_de_gui/img/bois-de-gui-logo.png) !important;
+}

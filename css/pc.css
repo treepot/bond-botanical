@@ -1,0 +1,1677 @@
+@charset "UTF-8";
+
+@media screen and (min-width:960px) {
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		common
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+.sp:not(.pc), .pad:not(.pc) {
+	display: none !important;
+}
+body:not(#top)>h1 {
+	text-align: center;
+	font-size: 44px;
+	line-height: 100px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		header
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+body#top>header{
+	background-color:#FFF;
+}
+body>header {
+	height: 60px;
+	position:relative;
+	z-index: 999;
+}
+body>header>nav {
+	text-align: center;
+	width: 100%;
+	background-color: rgba(255,255,255,.7);
+	border-bottom: 1px solid #E0E0E0;
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+body>header>nav>a>img {
+	height:100%;
+}
+body>header>nav>.logo {
+	vertical-align: middle;
+	display: inline-block;
+	height: 60px;
+	background-color: #C7C7BF;
+	padding: 17px 16px;
+}
+body>header>nav>div{
+	display:inline-block !important;
+}
+body>header>nav>div>a{
+	font-size: 16px;
+	padding: 20px 26px;
+	line-height: 20px;
+	vertical-align: middle;
+	transition:opacity .2s;
+	cursor:pointer;
+	display: inline-block;
+}
+body>header>nav>div>a:hover{
+	opacity:.5;
+}
+body>header>nav.navFix {
+	position: fixed;
+	top: 0;
+	z-index: 90;
+}
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		footer
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+footer {
+	text-align: center;
+	padding: 80px 0 50px !important;
+	border-top: 1px solid #E0E0E0 !important;
+}
+footer>p{
+	font-size: 26px;
+	margin-bottom: 40px;
+}
+footer>p:after{
+	width:50px;
+}
+footer>.container{
+	width:700px;
+	margin:0 auto;
+}
+footer>.container>nav>.fb-page{
+	float:left;
+	width:340px;
+	height:520px;
+	background-color: #eee;
+}
+footer>.container>nav>a{
+	display:block;
+	float:left;
+	width:160px;
+	height:160px;
+	line-height:160px;
+	color:#FFF;
+	font-size: 24px;
+  text-shadow: 0 0 3px rgba(0,0,0,.1);
+	text-align:center;
+	margin:0 0 20px 20px;
+	transition:all .2s;
+}
+footer>.container>nav>a.order{
+	font-size:30px;
+}
+footer>.container>nav>a:hover{
+	opacity:.8;
+}
+footer>.container>nav>a:first-child{
+	margin-left:0;
+}
+footer>.container>nav>a.half{
+	width:340px;
+}
+footer>.container>nav>a.full{
+	width:100%;
+	margin-left: 0;
+}
+footer>.nav2{
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	margin: 20px 0 40px;
+}
+footer>.nav2>a{
+	line-height:36px;
+	padding: 0 20px;
+}
+
+footer>.sns{
+	margin-bottom: 40px;
+	font-size: 0;
+}
+footer>.sns>a{
+	padding: 0 10px;
+	display: inline-block;
+}
+footer>.sns>a:first-child{
+	margin-right: 10px;
+}
+footer>.sns>a>i{
+	font-size: 24px;
+  color: #555;
+}
+
+footer>a.logo {
+	transition: opacity .3s;
+}
+footer>a.logo:hover {
+	opacity: .5;
+}
+footer>a.logo>img {
+	width: 120px;
+}
+footer>a[data-scroll] {
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 10px auto 0;
+	position: relative;
+}
+footer>a[data-scroll]:before, footer>a[data-scroll]:after {
+	position: absolute;
+	content: "";
+	height: 3px;
+	background-color: #555;
+	transition: top .2s ease-out;
+	top: 30px;
+}
+footer>a[data-scroll]:hover:before, footer>a[data-scroll]:hover:after {
+	top: 20px;
+}
+footer>a[data-scroll]:before, footer>a[data-scroll]:after {
+	width: 18px;
+}
+footer>a[data-scroll]:before {
+	-webkit-transform  : rotate(45deg);
+	-moz-transform     : rotate(45deg);
+	-ms-transform      : rotate(45deg);
+	-o-transform       : rotate(45deg);
+	transform          : rotate(45deg);
+	right: 15px;
+}
+footer>a[data-scroll]:after {
+	-webkit-transform  : rotate(-45deg);
+	-moz-transform     : rotate(-45deg);
+	-ms-transform      : rotate(-45deg);
+	-o-transform       : rotate(-45deg);
+	transform          : rotate(-45deg);
+	left: 16px;
+}
+footer>small{
+	font-size:12px;
+	display:block;
+	text-align:right;
+	padding-right:3%;
+	color:#555;
+}
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		top
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+/*body#top>* {
+	position: relative;
+}*/
+body#top>section,body#top>footer{
+	z-index:99;
+}
+
+/* mv */
+.mv{
+	overflow:hidden;
+}
+.slider {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.slider .slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-size: cover;
+	background-position: top center;
+}
+.def {
+	-webkit-transition  : -webkit-transform 10s cubic-bezier(0, 0, 1, 1);
+	-moz-transition     : -moz-transform 10s cubic-bezier(0, 0, 1, 1);
+	-ms-transition      : -ms-transform 10s cubic-bezier(0, 0, 1, 1);
+	-o-transition       : -o-transform 10s cubic-bezier(0, 0, 1, 1);
+	transition          : transform 10s cubic-bezier(0, 0, 1, 1);
+	-webkit-transform  : scale(1,1);
+	-moz-transform     : scale(1,1);
+	-ms-transform      : scale(1,1);
+	-o-transform       : scale(1,1);
+	transform          : scale(1,1);
+}
+/*.zoom {
+	-webkit-transform  : scale(1.2,1.2);
+	-moz-transform     : scale(1.2,1.2);
+	-ms-transform      : scale(1.2,1.2);
+	-o-transform       : scale(1.2,1.2);
+	transform          : scale(1.2,1.2);
+}*/
+.mv>h1{
+	width:220px;
+	position:absolute;
+	z-index: 12;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 55px;
+	left: 0;
+	right: 0;
+}
+.mv>h1>img{
+	width:100%;
+	height:auto;
+}
+
+/* s2 (bois de guiの説明エリア) */
+#s2 {
+	display: table;
+	width: 100%;
+}
+#s2>div {
+	display: table-cell;
+	width: 50%;
+}
+#s2>div.p {
+	background-color: #C7C7BF;
+}
+#s2>div.img {
+	background: url(../img/img_bois_de_gui.jpg) no-repeat center center;
+	background-size: cover;
+}
+#s2>div.p>dl {
+	margin: 80px 0;
+	color: #FFF;
+	font-size: 14px;
+	text-align: center;
+	width: 100%;
+	line-height: 2em;
+	padding: 0 30px;
+}
+#s2>div.p>dl>dt:first-child img {
+	width: 210px;
+}
+#s2>div.p>dl>dt:not(:first-child), #s2>div.p>dl>dd:last-child {
+	max-width: 380px;
+	margin: 0 auto;
+	line-height: 32px;
+}
+#s2>div.p>dl>dd:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+/* fb */
+#fb_plugin{
+	width: 100%;
+	background-color: #3564a2;
+	/*background-color: #FFFFFF;
+  padding-top: 100px;*/
+}
+#fb_plugin>div:last-child{
+	display: inline-block;
+	width: calc(100% - 500px);
+	float: right;
+	height: 500px;
+	position: relative;
+}
+#fb_plugin>div:last-child>img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 100px;
+	height: auto;
+}
+
+/* gallery */
+#gallery {
+	padding-bottom: 80px;
+	position:relative;
+}
+#gallery>h2 {
+	text-align: center;
+	padding-top: 80px;
+	margin-bottom: 40px;
+	font-size: 26px;
+	position:relative;
+	z-index:2;
+}
+#gallery>h2:after {
+	width:45px;
+}
+#instafeed{
+	text-align:center;
+	font-size:0;
+}
+#instafeed>a{
+	display:inline-block;
+	width:200px;
+	height:200px;
+	margin:1px;
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	transition:all .2s;
+}
+#instafeed>a:hover{
+	opacity:.8;
+}
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		What's new / Lesson / WP
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		Order
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+#order>section.lineup{
+	font-size:0;
+	text-align:center;
+  padding-bottom: 50px;
+}
+#order>section.lineup>.h2o{
+	width: 720px;
+	margin: 0 auto 30px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	padding: 20px 25px;
+}
+#order>section.lineup>.h2o>h3{
+  font-size: 20px;
+	position:relative;
+}
+#order>section.lineup>.h2o>h3:after{
+	content:"";
+	width:70px;
+	height:1px;
+	margin:0 auto;
+	position:absolute;
+	left:0;
+	right:0;
+	background-color:#333;
+	bottom:0;
+}
+#order>section.lineup>.h2o>p{
+	font-size: 12px;
+	text-align: left;
+	margin-top:10px;
+}
+#order>section.lineup>.h2o>p>strong{
+	font-weight:bold;
+}
+#order>section.lineup>.h2o>p>span{
+	display: inline-block;
+	padding-left:14px;
+	position:relative;
+	margin-top:10px;
+}
+#order>section.lineup>.h2o>p>span:before{
+	content:"・";
+	position:absolute;
+	left:0;
+	top:0;
+}
+#order>section.lineup>h2{
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+#order>section.lineup>a{
+	display:inline-block;
+	width: 300px;
+	height: 150px;
+	background-color: #f4f4f4;
+	margin:0 15px 30px;
+}
+#order>section.lineup>a>span.photo{
+	display: inline-block;
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	float: left;
+}
+#order>section.lineup>a>h3{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+  padding: 52px 0;
+}
+#order>section.lineup>a>h3>span.more{
+	display:block;
+	font-size: 12px;
+	margin-top: 5px;
+	color: #227;
+}
+#order>section.lineup>a>h3>span.more>span.ti-angle-right{
+  margin-left: 2px;
+}
+#order>section.lineup>a:hover{
+	opacity:.8;
+}
+
+#order>section.lineup>div.fax{
+	text-align:right;
+	padding-right:5%;
+}
+#order>section.lineup>div>a.fax_sheet{
+	font-size:14px;
+  color: #666;
+	display:inline-block;
+	border:1px solid #AAA;
+	border-radius:6px;
+	padding:10px 22px;
+	transition:all .2s;
+}
+#order>section.lineup>div>a.fax_sheet:hover{
+	background-color:#EEE;
+}
+#order>section.lineup>div>a.fax_sheet>i.fa-print{
+	font-size: 28px;
+	padding-right: 5px;
+}
+#order>section.lineup>div>a.fax_sheet>span>i.fa-file-pdf-o{
+	font-size: 16px;
+	padding:0 2px;
+}
+#order>section.lineup>div>a.fax_sheet>span{
+	font-size:12px;
+	padding-left:5px;
+}
+
+
+/* Order details */
+section.product_detail{
+	position:relative;
+}
+section.product_detail>a.back{
+	position:absolute;
+	line-height: 40px;
+	text-align: center;
+	left: 0px;
+	top: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-right: 10px;
+	transition: left .2s;
+}
+section.product_detail>a.back:hover{
+	left: -10px;
+}
+section.product_detail>a.back>span{
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 14px;
+	margin-left: 5px;
+}
+.product_detail>.th>p>span{
+	display: block;
+	line-height: 12px;
+	font-size: 12px;
+	margin-top: -5px;
+}
+.product_detail>.type>select, .product_detail>.quantity>select{
+	border: 1px solid #AAA;
+	height: 36px;
+	width: 100%;
+	padding: 5px;
+	font-size: 14px;
+	border-radius:4px;
+	cursor:pointer;
+	position:relative;
+	transition:border .2s;
+	z-index: 2;
+	background-color: transparent;
+}
+.product_detail>.type>select[name="type"]:hover, .product_detail>.quantity>select[name="quantity"]:hover{
+	border: 1px solid #000;
+}
+.colormejs>div{
+	width:100% !important;
+}
+.cartjs_box{
+	border: none !important;
+	width:220px !important;
+	float:right !important;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.colormejs .cartjs_box>div,
+.colormejs .cartjs_box>.cartjs_header{
+	display:none !important;
+}
+.colormejs .cartjs_box>.cartjs_form>.cartjs_block{
+	padding: inherit !important;
+}
+.cartjs_product_table{
+margin-bottom: 20px;
+}
+.cartjs_product_table>table{
+	width: 100% !important;
+	margin: 0 !important;
+	background-color:transparent !important;
+	border: none !important;
+}
+.cartjs_product_table th,
+.cartjs_block th{
+	display:none !important;
+}
+.cartjs_product_table td,
+.cartjs_block>.cartjs_dtl_tbl td{
+	position:relative;
+	padding:10px 0 !important;
+	border: none !important;
+}
+.cartjs_sales_price,
+.cartjs_product_num{
+	display:none !important;
+}
+.cartjs_sk_link_other>a,
+.cartjs_link_regal>a{
+	font-size:10px;
+}
+.cartjs_cart_in>input,
+.cartjs_buy>p>input{
+	background-image:none !important;
+	box-shadow:none !important;
+	text-shadow:none !important;
+	margin:0 !important;
+	width: 100% !important;
+	padding:0 !important;
+	border-radius:0 !important;
+	border:none !important;
+	display: block;
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 16px !important;
+	letter-spacing: 1px;
+	transition:opacity .3s;
+	cursor:pointer;
+}
+.cartjs_cart_in>input:hover{
+	opacity:.8;
+}
+input.cartjs_product_input_txt, .cartjs_quantity>input{
+	width: 110px !important;
+	height: 36px;
+	padding: 5px;
+	text-align: center;
+	font-size: 14px;
+	border-radius:4px;
+	cursor:text;
+	border: 1px solid #AAA;
+	transition:border .2s;
+}
+.cartjs_product_table select, .cartjs_block>.cartjs_dtl_tbl select{
+	border: 1px solid #AAA;
+	height: 36px;
+	width: 100%;
+	padding: 5px;
+	font-size: 14px !important;
+	border-radius:4px;
+	cursor:pointer;
+	position:relative;
+	transition:border .2s;
+	z-index: 2;
+	background-color: transparent;
+}
+.cartjs_product_table select:hover, input.cartjs_product_input_txt:hover{
+	border: 1px solid #000;
+}
+.cartjs_option td:after, .product_detail>.type:after, .product_detail>.quantity:after{
+	content: "";
+	position: absolute;
+	border-top: 8px solid #555;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	right: 15px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 0;
+	z-index: 1;
+}
+.cartjs_cart_in{
+	margin: 0 !important;
+}
+.product_detail>.paypal_info{
+	text-align:right;
+	font-size:10px;
+	margin-top:5px;
+}
+.product_detail>.paypal_info>p:first-child{
+	display:inline-block;
+	text-align:left;
+	position:relative;
+}
+.product_detail>.paypal_info>p>b{
+	font-weight:bold;
+	font-size:1.1em;
+}
+.product_detail>.paypal_info>p span{
+	position:absolute;
+	left:-12px;
+}
+.product_detail>.paypal_info>p:last-child{
+	text-align:right;
+}
+.product_detail>.paypal_info>p:last-child>a,
+.product_detail>.detail>p>a{
+	color:#44d;
+}
+.product_detail>.paypal_info>p:last-child>a:hover{
+	text-decoration:underline;
+}
+.product_detail>.detail{
+	clear:both;
+	padding-top: 30px;
+}
+.product_detail>.detail2{
+	float:right;
+	width:330px;
+	padding-bottom: 40px;
+}
+.product_detail>.detail>p{
+	line-height: 30px;
+	font-size: 14px;
+	color: #333;
+}
+.product_detail>.detail>p:last-child{
+	margin-top:30px;
+}
+.product_detail>.detail>p>a{
+	text-decoration:underline;
+}
+.product_detail>.detail2>p{
+	line-height: 24px;
+	font-size: 14px;
+	color: #333;
+}
+.cartjs_box>form>.cartjs_product_img{
+	display:none !important;
+}
+section.product_detail{
+	width: 720px;
+	margin: 0 auto;
+}
+section.product_detail>h1{
+	font-size: 52px !important;
+	line-height: 70px !important;
+	height:70px;
+	margin:0 0 50px 0 !important;
+	border-bottom: none !important;
+	width:50% !important;
+	float:right;
+	text-align: center;
+}
+section.product_detail>h1>span{
+	font-size: 32px;
+	display: block;
+	line-height: 32px;
+}
+section.product_detail{
+	padding: 70px 0 80px;
+	border-bottom: 1px solid #E0E0E0;
+}
+section.product_detail>.product_img{
+	float: left;
+}
+section.product_detail>.product_img>.display_img{
+	width: 360px !important;
+	height:360px;
+	position:relative;
+	overflow:hidden;
+}
+
+section.product_detail>.product_img>.display_img>img{
+	position:absolute;
+	top:0;
+	bottom: 0;
+	max-width: 100%;
+	max-height: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+section.product_detail>.product_img>.display_img>img.display{
+	z-index:1;
+	display:block;
+}
+section.product_detail>.product_img>.display_img>img:not(.display){
+	display:none;
+}
+section.product_detail>.product_img>.thum{
+	width: 360px;
+	margin-top: 10px;
+	text-align:center;
+}
+section.product_detail>.product_img>.thum>span{
+	height: 80px;
+	width: 80px;
+	display: inline-block;
+	background-size: cover;
+	border-radius: 6px;
+	border: 4px solid #CCC;
+	cursor: pointer;
+	margin:0 5px;
+	transition: border-color .2s;
+}
+section.product_detail>.product_img>.thum>span.active{
+	border-color:#696;
+}
+
+.product_detail>.th{
+	width: 140px;
+	position: absolute;
+	right: 220px;
+	top: 190px;
+	text-align: right;
+	margin-top: 10px;
+}
+.product_detail>.th>p{
+	line-height:36px;
+	margin-bottom:20px;
+	padding: 0 15px;
+	font-size:14px;
+	color:#555;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.product_detail>.type, .product_detail>.quantity{
+	float:right;
+	margin-bottom:10px;
+	position:relative;
+}
+.product_detail>.quantity{
+	width: 110px;
+	margin-right:110px;
+	margin-top:10px;
+}
+.product_detail>.quantity>button{
+	width:110px;
+	background:none !important;
+	border:none;
+	cursor:pointer;
+}
+.cartjs_box{
+	width:220px !important;
+	float:right !important;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.product_detail a.order{
+	display: block;
+	width: 220px;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: system-ui;
+	cursor:pointer;
+	transition: opacity .3s;
+	position:absolute;
+	bottom: 50px;
+  right: 0;
+}
+.product_detail a.order:hover{
+	opacity:.8;
+}
+
+#order>section.other{
+	text-align:center;
+	margin:50px 0 80px;
+}
+#order>section.other>h2{
+	margin-bottom: 40px;
+	font-size: 24px;
+}
+#order>section.other>h2:after{
+	width:90px;
+}
+#order>section.other>a{
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	text-align: center;
+	position: relative;
+	margin: 0 10px;
+	transition: all .3s;
+}
+#order>section.other>a:hover{
+	opacity: .8;
+}
+#order>section.other>a>h3{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255,255,255,.6);
+	padding: 3px 0;
+	text-shadow: 0 0 10px #FFF;
+}
+#order>section.other>a>h3>span.more{
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+}
+#order>section.other>a>span.photo{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		Wedding / Works
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+#wedding>.gallery>a,
+#works>.gallery>a{
+	-webkit-transition  : all 1s cubic-bezier(0.23, 1, 0.32, 1);
+	-moz-transition     : all 1s cubic-bezier(0.23, 1, 0.32, 1);
+	-ms-transition      : all 1s cubic-bezier(0.23, 1, 0.32, 1);
+	-o-transition       : all 1s cubic-bezier(0.23, 1, 0.32, 1);
+	transition          : all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#wedding>.gallery,
+#works>.gallery {
+	overflow: hidden;
+	line-height:0;
+	margin-bottom:80px;
+}
+section.gallery>.image-link {
+	display:inline-block;
+	width:19%;
+	padding-bottom:19%;
+	background-position:center center;
+	background-size:cover;
+	margin: .5%;
+}
+section.gallery>.ap{
+	/*-webkit-transform  : scale(.9);
+	-moz-transform     : scale(.9);
+	-ms-transform      : scale(.9);
+	-o-transform       : scale(.9);
+	transform          : scale(.9);*/
+	opacity:0;
+}
+.lb-dataContainer{
+	display:none !important;
+}
+section.gallery>.col2{
+	width:39% !important;
+}
+section.gallery>.row2col2{
+	width:39% !important;
+	padding-bottom:39% !important;
+	margin-bottom: 0 !important;
+}
+section.gallery>.row2{
+	padding-bottom:39% !important;
+}
+section.gallery>.row2col3{
+	width:59% !important;
+	padding-bottom:39% !important;
+	margin-bottom: 0 !important;
+}
+section.gallery>.row3col2{
+	width:39% !important;
+	padding-bottom:59% !important;
+	margin-bottom: 0 !important;
+}
+section.gallery>div.text{
+	line-height: 24px;
+	font-size: 14px;
+	width:720px;
+	margin:30px auto 0;
+}
+section.gallery>div.text>p{
+	margin:10px 0;
+}
+#wedding>section.gallery>div.text>p:last-child{
+	font-size: 12px;
+	color: #555;
+	margin-top: 30px;
+}
+#works>section.gallery>div.text>p{
+	text-align:center;
+}
+section.gallery>div>h2{
+	font-size: 20px;
+	margin:40px 0 20px;
+	text-align:center;
+	font-weight:bold;
+	line-height:40px;
+}
+section.gallery>div>h2:after{
+	width:60px;
+}
+section.gallery>div.text>.price_table{
+	text-align:center;
+}
+section.gallery>div.text>.price_table>table{
+	display:inline-block;
+}
+section.gallery>div.text>.price_table>span{
+	display:block;
+	font-size:18px;
+	font-weight:bold;
+}
+section.gallery>div.text>.price_table>table th{
+	font-size:16px;
+	width:90px;
+}
+section.gallery>div.text>.price_table>table td{
+	text-align:right;
+	width:90px;
+}
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		Shop
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+#shop>section{
+	text-align:center;
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+#shop>section h2{
+	font-weight:bold;
+	font-size:14px;
+	position:relative;
+}
+#shop>section.shop>h2{
+	color:#333;
+}
+#shop>section.shop>h2>img{
+	width:80px;
+}
+#shop>section.shop>h2:after{
+	background-color: #333;
+}
+#shop>section.company h2{
+	color:#FFF;
+}
+#shop>section.company h2:after{
+	background-color: #FFF;
+}
+#shop>section h2:after{
+	content:"";
+	width:60px;
+	height:1px;
+	bottom:0;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	position:absolute;
+}
+#shop>section h2:first-child:after{
+	width:60px;
+}
+#shop>section h2:not(:first-child):after{
+	width:26px;
+}
+#shop>section h2:not(:first-child){
+	margin:100px 0 20px;
+}
+#shop>section>address{
+	padding: 20px 0;
+	line-height: 22px;
+	font-size:12px;
+}
+#shop>section>p{
+	font-size:12px;
+	line-height:22px;
+}
+#shop>section table th{
+	font-weight:bold;
+}
+#shop>section table th, #shop>section table td{
+	font-size:12px;
+	text-align:left;
+}
+#bois_de_gui_map{
+	width:100%;
+	height:100%;
+}
+#shop>section.company{
+	margin-top:150px;
+}
+#shop>section h2{
+	line-height:40px;
+}
+#shop>section>.pcright{
+	width:40%;
+	height:100%;
+}
+#shop>section.company>.pcright{
+	float:right;
+	background:url(../img/company.jpg) no-repeat center center;
+	background-size:cover;
+}
+#shop>section.company{
+	height:472px;
+	background-color:#C7C7BF;
+}
+#shop>section>.pcleft{
+	width:60%;
+	float:left;
+	color:#FFF;
+	padding:50px 0;
+	text-shadow: 0 0 3px rgba(0,0,0,.1);
+}
+#shop>section table{
+	width:75%;
+	margin-top:40px;
+	margin-left:25%;
+}
+#shop>section table th{
+	padding:10px 0 10px 20px;
+	width:160px;
+}
+#shop>section table td{
+	padding-bottom:10px;
+}
+.map{
+	margin:30px auto 0;
+	width:70%;
+	height:420px;
+}
+
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		Contact
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+#contact>#form,
+#check>#contact_confirm{
+	width:480px;
+	margin:0 auto 50px;
+	position:relative;
+}
+#form .selectArea>select,
+#form input:not([type="submit"]):not([type="checkbox"]),
+#form textarea{
+	width:100%;
+	border: 1px solid #DDD;
+	padding: 5px 10px;
+	font-size: 14px !important;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: border .2s;
+	background-color:transparent;
+}
+#form input:not([type="submit"]):not([type="checkbox"]),
+#form textarea{
+	cursor:text;
+}
+#form .selectArea>select:hover,
+#form input:not(:[type="submit"]):not([type="checkbox"]):hover,
+#form textarea:hover{
+	border:1px solid #999;
+}
+#form input:not([type="submit"]):not([type="checkbox"]),
+#form textarea{
+	margin-bottom:20px;
+}
+#form .selectArea>select{
+	z-index:2;
+}
+#form .selectArea{
+	position: relative;
+}
+#form .selectArea:after{
+	content: "";
+	position: absolute;
+	border-top: 8px solid #555;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	right: 15px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 0;
+	z-index: 1;
+}
+#form .selectArea>span{
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+	font-size: 12px;
+	color: #E55;
+	opacity:0;
+	transition: opacity .2s;
+}
+#form .selectArea>select,
+#form>input:not([type="submit"]){
+	height: 36px;
+}
+#form>textarea{
+	height:200px;;
+}
+#form p,
+#contact_confirm p{
+	font-size:11px;
+	color:#555;
+	padding:0 5px 3px 0;
+	font-weight:bold;
+}
+#form p>span{
+	font-weight:normal;
+	margin-left:10px;
+}
+#form p>span.auto_input{
+	border: 1px solid #999;
+	margin-left: 10px;
+	padding: 2px 4px;
+	font-size: 80%;
+	font-weight:normal;
+}
+#form>div:not(.comment){
+	margin-bottom: 20px;
+}
+#form>input[type="submit"],
+#check>form>input[type="submit"]{
+	border: none;
+	line-height: 36px;
+	width: 150px;
+	border-radius: 4px;
+	font-size: 14px;
+	margin: 0 auto;
+	display: block;
+	letter-spacing: 2px;
+	text-indent: 1px;
+	text-shadow: 0 0 10px rgba(0,0,0,.1);
+	cursor:pointer;
+	transition: background-color .3s;
+}
+#form>input[type="submit"]:hover,
+#check>form>input[type="submit"]:hover{
+	background-color:#ef6565;
+}
+#form>a,
+#check>form>a{
+	position: absolute;
+	left: 3%;
+}
+#form>a>input[type="button"],
+#check>form>a>input[type="button"]{
+	background: none;
+	border: none;
+	font-size: 14px;
+	line-height: 36px;
+	cursor: pointer;
+}
+#comp>p.cname{
+	font-weight:bold;
+}
+#comp>p.thanks{
+	font-size:14px;
+}
+#comp>p>a{
+	text-decoration: underline;
+}
+#comp>p>a:hover,#comp>p>a.hover{
+	color:#999;
+}
+#comp>p.err,
+#comp>p.cname,
+#comp>p.thanks{
+	margin: 0 3% 50px;
+}
+#comp>p.cname{
+	margin: 0 3% 10px;
+}
+
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		Order Sheet
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+#order_sheet>.flow{
+	width: 760px;
+	margin: 0 auto 50px;
+	border: 2px dashed #DDD;
+	padding: 20px;
+	border-radius: 10px;
+}
+#order_sheet>.flow>p{
+	margin-bottom: 10px;
+}
+#order_sheet>.flow>.flow_contents>table{
+  font-size: 14px;
+	color:#333;
+	margin-left:20px;
+}
+#order_sheet>.flow>.flow_contents>table th{
+  padding-right: 10px;
+}
+#order_sheet>.flow>.flow_contents>table td{
+  padding-bottom: 10px;
+}
+#order_sheet>#form{
+	width: 100%;
+	margin: 0 auto 50px;
+	position: relative;
+}
+#order_sheet>#form>h2{
+	text-align: center;
+	background-color: #6a6c75;
+	color: #FFF;
+	font-size: 18px;
+	padding: 10px 0;
+	margin-bottom:20px;
+	clear:both;
+}
+#order_sheet>#form>.type,
+#order_sheet>#form>.color,
+#order_sheet>#form>.use{
+	width: 900px;
+	margin: 0 auto 20px;
+}
+#order_sheet>#form input[type="radio"] + label{
+	cursor:pointer;
+	text-align:center;
+	line-height:40px;
+	margin-right:10px;
+	border-radius:6px;
+	display:inline-block;
+	font-size:14px;
+	position:relative;
+	transition: all .2s;
+	border: 1px solid #DDD;
+}
+#order_sheet>#form>div>input[type="radio"] + label{
+	width:120px;
+}
+#order_sheet>#form>div.type>input[type="radio"] + label{
+	width: calc((100% - (5 - 1) * 10px) / 5);
+}
+#order_sheet>#form input[type="radio"] + label:hover{
+	border: 1px solid #999;
+}
+#order_sheet>#form input[type="radio"] + label:last-child{
+	margin-right:0 !important;
+}
+#order_sheet>#form>div:not(.color) input[type="radio"]:checked + label{
+	background-color:#669966;
+	color: #FFF;
+	border: none !important;
+	text-shadow:0 0 5px rgba(0,0,0,.3);
+}
+#order_sheet>#form>div.color>input[type="radio"]:checked + label{
+	background-size: cover;
+	color: transparent;
+	background-position: center center;
+}
+#order_sheet>#form>div.color>input[type="radio"]:checked:hover + label{
+	color:#333;
+}
+#order_sheet>#form>.color>input[type="radio"] + label:after{
+	content:"";
+	width:100%;
+	height:100%;
+	border-radius:6px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all .3s;
+	opacity:0;
+}
+#order_sheet>#form>div.color>input[type="radio"]:hover + label:after,
+#order_sheet>#form>div.color>input[type="radio"]:checked + label:after{
+	opacity:1;
+}
+#order_sheet>#form>div.color>input[type="radio"]:checked:hover + label:after{
+	opacity:.2;
+}
+#order_sheet>#form span.other{
+	font-size:14px;
+	padding-left:10px;
+	line-height:40px;
+	display:inline-block;
+	border-radius:6px;
+	cursor:pointer;
+	border: 1px solid #DDD;
+}
+#order_sheet>#form>.use>span.other{
+	width:510px;
+}
+#order_sheet>#form>.notice>.notice_title>span.other{
+	width:250px;
+}
+#order_sheet>#form>.use>span.other>input{
+	width:435px;
+	height:40px;
+	border:none;
+	font-size: 14px;
+  color: #333;
+  background-color: transparent;
+	margin:0;
+}
+#order_sheet>#form>.budget{
+	width: 300px;
+  margin: 0 auto 20px;
+	position:relative;
+}
+#order_sheet>#form input[type="tel"],
+#order_sheet>#form input[type="text"],
+#order_sheet>#form .selectArea>select{
+	height:42px;
+}
+#order_sheet>#form>.budget>input[type="tel"]:hover{
+	border: 1px solid #999;
+}
+#order_sheet>#form>.budget>span{
+	font-size: 14px;
+	position: absolute;
+	bottom: 20px;
+	right: -21px;
+	width: 16px;
+	text-align: center;
+	line-height: 30px;
+}
+#order_sheet>#form>.card,
+#order_sheet>#form>.notice{
+	margin-bottom: 0;
+	border-top:1px dashed #DDD;
+	overflow: hidden;
+	transition: height .3s;
+}
+#order_sheet>#form .card>.swich,
+#order_sheet>#form .notice>.swich{
+  display: table;
+	margin: 20px auto;
+}
+#order_sheet>#form .swich>input{
+	width:20px;
+	height:20px;
+	margin:0;
+	background:url(../img/checkbox.gif) no-repeat left center;
+	background-size:cover;
+	cursor:pointer;
+	display: table-cell;
+	vertical-align: middle;
+}
+#order_sheet>#form .swich>input:hover{
+	background-position: center center;
+}
+#order_sheet>#form .swich>input:checked{
+	background-position: right center;
+}
+#order_sheet>#form .swich>label{
+	vertical-align: middle;
+	display:table-cell;
+	line-height: 20px;
+	font-size: 16px;
+	padding-left: 7px;
+	cursor:pointer;
+}
+#order_sheet>#form>.card p{
+	width:300px;
+	margin: 0 auto;
+}
+#order_sheet>#form>.card textarea{
+	width:300px;
+	margin: 0 auto 40px;
+	height:200px;
+	display:block;
+}
+#order_sheet>#form>.notice>.notice_contents>.notice_title{
+	width: 890px;
+	margin: 0 auto 20px;
+}
+#order_sheet>#form>.notice>.notice_contents>.notice_title>input[type="radio"] + label{
+	width:150px;
+}
+#order_sheet>#form>.notice>.notice_contents>.notice_title>span.other>input{
+	width:175px;
+	height: 40px;
+	border: none;
+	color: #333;
+	background-color: transparent;
+	margin: 0;
+}
+#order_sheet>#form>.notice>.notice_contents>.notice_from_to{
+	width: 890px;
+	margin: 0 auto;
+}
+#order_sheet>#form>.notice>.notice_contents>.notice_from_to:last-child{
+	margin-bottom: 20px;
+}
+#order_sheet>#form h3{
+	font-size: 14px;
+	font-weight:bold;
+	clear:both;
+}
+#order_sheet>#form h3>span{
+	font-size:12px;
+	font-weight:normal;
+}
+#order_sheet>#form>.notice>.notice_contents>.notice_from_to>div{
+	width:calc((100% - 20px) / 3);
+}
+#order_sheet>#form>.notice>.notice_contents>.notice_from_to>.notice_co_name,
+#order_sheet>#form>.notice>.notice_contents>.notice_from_to>.notice_position{
+	float:left;
+	margin-right:10px;
+}
+#order_sheet>#form>.notice>.notice_contents>.notice_from_to>.notice_name{
+	float:right;
+}
+
+#order_sheet>#form>.delivery_info{
+	float:left;
+	width: 47%;
+	margin-left: 2%;
+}
+#order_sheet>#form>.delivery_info>div{
+	float:left;
+}
+#order_sheet>#form>.delivery_info>.delivery_date{
+	width: 100%;
+	margin: 0 auto 20px;
+}
+#order_sheet>#form>.delivery_info>.delivery_date>.selectArea{
+	float:left;
+}
+#order_sheet>#form>.delivery_info>.delivery_date>span{
+	float:left;
+	width:30px;
+	text-align:center;
+	line-height:42px;
+}
+#order_sheet>#form .selectArea{
+	display:inline-block;
+}
+#order_sheet>#form .selectArea>select{
+	/*border-color: transparent;*/
+	position: relative;
+}
+/*#order_sheet>#form>.selectArea>select:hover{
+	border-color:#000;
+}*/
+#form .selectArea.year{
+	width:90px;
+}
+#form .selectArea.month{
+	width:70px;
+}
+#form .selectArea.date{
+	width:100px;
+}
+#form .selectArea.year,
+#form .selectArea.month,
+#form .selectArea.date{
+	margin-right:5px;
+}
+#form .selectArea.hour1,
+#form .selectArea.hour2{
+	width:80px;
+}
+#order_sheet>#form>.delivery_info .name,
+#order_sheet>#form>.delivery_info .furigana,
+#order_sheet>#form>.delivery_info .code,
+#order_sheet>#form>.delivery_info .pref,
+#order_sheet>#form>.delivery_info .addr1{
+	width:49%;
+}
+#order_sheet>#form .mr{
+	margin-right:2%;
+}
+#order_sheet>#form>.delivery_info .tel,
+#order_sheet>#form>.delivery_info .addr2,
+#order_sheet>#form>.delivery_info .mail{
+	width:100%;
+}
+#order_sheet>#form>.delivery_info .code{
+	margin-right:50%;
+}
+#form textarea:hover,
+#order_sheet>#form>.use>span.other:hover{
+	border:1px solid #999;
+}
+#order_sheet>#form>.delivery_info>.swich{
+	width:100%;
+	margin-bottom:20px;
+}
+#order_sheet>#form>.delivery_info>.swich>input#PIC{
+	width:16px;
+	height:16px;
+	}
+#order_sheet>#form>.delivery_info>.swich>label{
+	line-height: 16px;
+  font-size: 13px;
+}
+#order_sheet>#form>.delivery_info>.PIC{
+	width:100%;
+	border: 1px dashed #CCC;
+	padding: 20px 20px 0px;
+	margin-bottom: 20px;
+}
+#order_sheet>#form>.delivery_info>.PIC>div{
+	float:left;
+}
+#order_sheet>#form>input[type="submit"]{
+	clear:both;
+}
+
+#order_sheet>#form>.payment>.transfer{
+	width: 210px;
+	margin: 0 auto 20px;
+}
+#order_sheet>#form>.payment>.transfer>label{
+	width:100px;
+}
+#order_sheet>#form>.payment>.payer{
+	width: 400px;
+	margin: 0 auto;
+}
+#form .selectArea.year_pay{
+	width:90px;
+}
+#form .selectArea.month_pay{
+	width:70px;
+}
+#form .selectArea.date_pay{
+	width:100px;
+}
+
+#order_sheet>#form>.payment>.deposit_date{
+	width:280px;
+	margin:0 auto 20px;
+}
+#order_sheet>#form .detail_comments{
+	width: 500px;
+	margin:0 auto;
+}
+#order_sheet>#form .detail_comments>textarea{
+	width:100%;
+	height:200px;
+}
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		check
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+#check>p{
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 20px;
+	padding: 0 3%;
+}
+#contact_confirm>div{
+	margin-bottom:20px;
+	background-color: #f4f4f4;
+	border-radius: 6px;
+	line-height: 24px;
+	padding: 10px 20px;
+}
+#order_confirm{
+	padding:0 3%;
+	margin-bottom:50px;
+}
+#order_confirm>section{
+	background-color: #fdfdfd;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+#order_confirm>section>h2{
+	font-size: 20px;
+	border-bottom: 1px solid #eee;
+	padding: 20px 30px;
+	font-weight: bold;
+  color: #fff;
+	background-color:#79a;
+	border-radius: 10px 10px 0 0;
+}
+#order_confirm>section>div.table{
+	padding:20px 30px;
+	display:table;
+	width:100%;
+	border-bottom: 1px solid #eee;
+}
+#order_confirm>section.col2>div.table{
+	width:50%;
+	float:left;
+	border-bottom: none;
+}
+#order_confirm>section>div.table>dl{
+	display:table-row;
+}
+#order_confirm>section>div.table>dl.e1{
+	display:inherit;
+}
+#order_confirm>section>div.table>dl.ttl>dt{
+	text-align:left;
+}
+#order_confirm>section>div.table>dl>dt,
+#order_confirm>section>div.table>dl>dd{
+	display: table-cell;
+	font-size:14px;
+}
+#order_confirm>section>div.table>dl>dt{
+	font-weight:bold;
+	text-align:right;
+	padding-right:15px;
+	white-space: nowrap;
+}
+#order_confirm>section>div.table>dl>dd{
+	text-align:left;
+}
+#order_confirm>section>div.table h3{
+	font-size:16px;
+	font-weight:bold;
+	color:#79a;
+	margin:30px 10px 0 0;
+	white-space: nowrap;
+}
+#order_confirm>section.col2>div.table>dl>dt{
+	padding-bottom:10px;
+	text-align:left;
+}
+
+}

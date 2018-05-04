@@ -1,0 +1,173 @@
+/* トップページバナー */
+#season_bnr>a{
+  transition: opacity .3s;
+}
+#season_bnr>a:hover,
+#season_bnr>a.hover{
+  opacity: .85;
+}
+@media screen and (min-width: 768px){
+#season_bnr{
+  text-align: center;
+  padding: 80px 5% 0;
+}
+#season_bnr img{
+  width: 100%;
+  max-width: 960px;
+}
+}
+@media screen and (max-width: 767px){
+#season_bnr{
+  text-align: center;
+  padding-top: 5px;
+}
+#season_bnr img{
+  width: 100%;
+}
+}
+
+/* 商品一覧 */
+#order>.lineup>a.seasons_prod.close{
+  cursor: initial;
+  position: relative;;
+}
+#order>.lineup>a.seasons_prod.close:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+  left: 0;
+  top: 0;
+}
+#order>.lineup>a.seasons_prod.close:before{
+  content: "ご注文受付終了いたしました。";
+  color: #FFF;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  margin: auto 0;
+  font-size: 18px;
+  line-height: 22px;
+  height: 22px;
+  z-index: 2;
+  text-shadow: 0 0 8px rgba(0,0,0,.2);
+}
+@media screen and (min-width: 960px){
+#order>.lineup>.seasons_ttl>img{
+  height: 32px;
+}
+}
+@media screen and (min-width: 768px){
+  #order>.lineup>.seasons_ttl{
+    font-size: 0;
+    margin-top: 50px;
+  }
+  #order>.lineup>h2:not(.seasons_ttl){
+    margin-top: 30px;
+  }
+  #order>.lineup>a.seasons_prod{
+    background-color: #fbefef;
+  }
+}
+@media screen and (max-width: 959px) and (min-width: 768px){
+#order>.lineup>.seasons_ttl>img{
+  height: 26px;
+}
+
+}
+@media screen and (max-width: 767px){
+  #order>.lineup>.seasons_ttl{
+    font-size: 0;
+    margin-top: 50px;
+    padding-bottom: 8px;
+  }
+  #order>.lineup>.seasons_ttl>img{
+    height: 20px;
+  }
+  #order>.lineup>a.seasons_prod{
+    background-color: #fbefef;
+  }
+  #order>section.lineup>h2.seasons_ttl:after{
+    width: 140px;
+    background-color: #f5d2d2;
+    height: 2px;
+  }
+  #order>.lineup>a.seasons_prod.hover{
+    background-color: #ead3d3;
+  }
+}
+
+/* 商品詳細ページ */
+@media screen and (min-width: 768px){
+section.season h1{
+  position: relative;
+  padding-top: 25px;
+}
+section.season h1>span{
+  position: absolute;
+  top: -25px;
+  border-bottom: 2px solid #f5d2d2;
+  font-size: 0;
+  line-height: 0;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+section.season h1>span>img{
+  width: 100%;
+  max-width: 300px;
+}
+}
+
+@media screen and (max-width: 767px){
+ section.season h1>span{
+   font-size: 0;
+   line-height: 0;
+   padding-bottom: 10px;
+ }
+ section.season h1>span>img{
+   height: 20px;
+   width: auto;
+ }
+}
+
+
+/* Recommend */
+@media screen and (min-width: 768px){
+  #order>section.season h2.seasons_ttl{
+    font-size: 0;
+    padding-bottom: 13px;
+    margin-bottom: 30px;
+  }
+  #order>section.season h2.seasons_ttl>img{
+    height: 22px;
+  }
+  #order>section.season>h2.seasons_ttl:after{
+    width: 150px;
+    background-color: #f5d2d2;
+    height: 2px;
+  }
+  #order>section.season>.seasons_thum{
+    width: 210px;
+  }
+  #order>section.season h2:not(.seasons_ttl){
+      margin-top: 40px;
+  }
+}
+@media screen and (max-width: 767px){
+  #order>section.season h2.seasons_ttl>img{
+    height: 20px;
+  }
+  #order>section.season>h2.seasons_ttl:after{
+    width: 130px;
+    background-color: #f5d2d2;
+  }
+  #order>section.season h2:not(.seasons_ttl){
+      margin-top: 40px;
+  }
+}

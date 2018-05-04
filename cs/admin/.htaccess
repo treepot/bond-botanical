@@ -1,0 +1,19 @@
+RewriteEngine on
+#RewriteOptions MaxRedirects=2
+#RewriteBase /cs/
+
+#httpsへリダイレクト
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^.*/index.php
+RewriteRule ^(.*)index\.php$ /cs/$1 [R=301,L]
+
+RewriteRule ^/cs/(.*)/$ /cs/$1.php
+
+#Basic認証
+AuthUserFile /home/users/0/lolipop.jp-2684e7861272dde5/web/cs/.htpasswd
+AuthGroupFile /dev/null
+AuthName “ID、パスワードを入力してください。”
+AuthType Basic
+require valid-user

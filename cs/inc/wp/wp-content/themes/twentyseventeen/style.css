@@ -1,0 +1,109 @@
+
+@media screen and (min-width:960px) {
+
+#page .page-header>h1.page-title {
+	text-align: center;
+	font-size: 44px;
+	line-height: 100px;
+	border-bottom: 1px solid #E0E0E0;
+}
+#primary{
+	width:600px;
+	margin:0 auto;
+}
+}
+@media screen and (max-width:959px) {
+
+#page .page-header>h1.page-title {
+	text-align: center;
+	font-size: 36px;
+	line-height: 80px;
+	margin-top: 50px;
+	border-bottom: 1px solid #E0E0E0;
+	border-top: 1px solid #E0E0E0;
+}
+#primary{
+	margin:0 20px;
+}
+}
+
+#masthead,
+#secondary,
+#colophon,
+#page.site>.skip-link,
+#primary .entry-meta>span.screen-reader-text,
+#primary nav.navigation h2,
+#primary nav.navigation>.nav-links>.page-numbers>.screen-reader-text,
+#primary nav.navigation>.nav-links>.page-numbers>svg{
+	display:none !important;
+}
+
+#page.site{
+	width:100%;
+	word-wrap: break-word;
+}
+#primary>main>article{
+	position:relative;
+	padding: 100px 0;
+}
+#primary>main>article:not(:first-child):before{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:1px;
+	background:#E0E0E0;
+	top:0;
+}
+#primary .entry-content>p{
+	margin: 10px 0;
+}
+#primary .entry-content>p>img{
+	max-width:100% !important;
+	height:auto !important;
+	margin: 10px 0;
+}
+
+#primary .entry-header>.entry-meta{
+	font-family: 'Amiri', serif !important;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 60px;
+	font-style:italic !important;
+}
+#primary .entry-header>.entry-meta time + time{/*Up date*/
+	display:none !important;
+	/*display: block;
+	text-align: right;
+	font-size: 10px;
+	font-family: initial;
+	font-style: normal;*/
+}
+#primary .entry-header>h2.entry-title{
+font-size: 26px;
+text-align: left;
+letter-spacing: 3px;
+margin: 1em 0;
+color: #444;
+}
+#primary nav.navigation{
+	margin:60px 0;
+}
+#primary nav.navigation>.nav-links{
+	text-align:center;
+	font-family: 'Amiri', serif !important;
+	font-size:0;
+}
+#primary nav.navigation>.nav-links>.page-numbers{
+	font-size:16px;
+	line-height: 32px;
+	padding: 0 6px;
+	display: inline-block;
+	transition: background-color .3s;
+	border-radius:4px;
+}
+#primary nav.navigation>.nav-links>.page-numbers.current{
+	color: #EA3838;
+}
+#primary nav.navigation>.nav-links>a.page-numbers:hover{
+	background-color: #E5E5E5;
+}

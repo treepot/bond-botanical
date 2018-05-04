@@ -1,0 +1,13 @@
+RewriteEngine on
+
+#RewriteCond %{THE_REQUEST} ^.*$
+RewriteRule ^(.*)$ https://bond-botanical.jp/test/$1 [L,P]
+
+AuthUserFile /home/users/0/lolipop.jp-2684e7861272dde5/web/.htpasswd
+AuthGroupFile /dev/null
+AuthName “ID、パスワードを入力してください。”
+AuthType Basic
+require valid-user
+# BEGIN WordPress
+
+# END WordPress

@@ -1,0 +1,259 @@
+/*
+グレー部分(文字色は白)
+C7C7BF
+
+*/
+
+/*------------------------------------------------------------------------
+		ALL
+------------------------------------------------------------------------*/
+body, html {
+	color: #333;
+	letter-spacing: .05em;
+	background-color: #FFF;
+	height: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+#wpadminbar,
+.edit-link,
+.no-results.not-found{
+	display:none !important;
+}
+.hide>*:not(.loading),
+.category-2>*:not(.loading),
+.category-3>*:not(.loading){
+	opacity:0;
+	transition: opacity .5s;
+}
+input[type="radio"]{
+	display:none;
+}
+
+.ul{
+	position:relative;
+}
+.ul:after{
+	content: "";
+	height: 1px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: #333;
+	bottom: 0;
+}
+
+/*------------------------------------------------------------------------
+		font
+------------------------------------------------------------------------*/
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+
+body,
+.yugo
+/*#primary .entry-content,
+#primary .entry-header>h2.entry-title*/ {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+/* 英字用 */
+h1,h2:not(.entry-title),h3,
+#header>nav>div>a,footer,
+.amiri{
+	font-family:'Amiri', serif;
+	color:#444;
+	letter-spacing:.05em;
+}
+
+/*placeholder*/
+:placeholder-shown {color: #eee;}
+/* Google Chrome, Safari, Opera 15+, Android, iOS */input::-webkit-input-placeholder {color: #ddd;}
+/* Firefox 18- */input:-moz-placeholder {color: #ddd;opacity: 1;}
+/* Firefox 19+ */input::-moz-placeholder {color: #ddd;opacity: 1;}
+/* IE 10+ */input:-ms-input-placeholder {color: #ddd; }
+/*placeholder focus*/
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+
+/*------------------------------------------------------------------------
+		color
+------------------------------------------------------------------------*/
+/* CVボタン */
+.cartjs_cart_in>input,
+.cartjs_buy>p>input,
+.product_detail a.order,
+#form>input[type="submit"],
+#check>form>input[type="submit"]{
+	background-color: #D51;
+	color: #FFF;
+}
+
+/* フッターパネルのグレー */
+footer>.container>nav>a {
+	background-color: #C7C7BF;
+}
+
+/*------------------------------------------------------------------------
+		loding
+------------------------------------------------------------------------*/
+.loading {
+  position: fixed;
+  margin: auto;
+  width: 60px;
+	height:60px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border-radius:50%;
+	border-width:6px;
+	border-style:solid;
+	border-top-color: rgba(200,200,200,1);
+	border-left-color: rgba(200,200,200,.3);
+	border-bottom-color: rgba(200,200,200,.3);
+	border-right-color: rgba(200,200,200,.3);
+	z-index:999;
+	animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
+
+
+/*------------------------------------------------------------------------
+    Not Found
+------------------------------------------------------------------------*/
+#not_found>section{
+	padding: 0 20% 50px;
+}
+#not_found>section>h2{
+	border-left: 8px solid #53af53;
+	padding-left:18px;
+	margin-bottom:20px;
+}
+#not_found>section>p{
+	line-height:1.7em;
+}
+
+/*------------------------------------------------------------------------
+		Arrangement & Bouquet
+------------------------------------------------------------------------*/
+#order>.product_detail>.product_img>.thum>.on{
+	display: inline-block;
+}
+#order>.product_detail>.product_img>.thum>.off{
+	display: none;
+}
+
+
+/*------------------------------------------------------------------------
+		Order Sheet
+------------------------------------------------------------------------*/
+/* color選択時のボタン画像 */
+#order_sheet>#form>div.color>input[type="radio"]#white_green + label:after{
+	background-image: url(../img/color/white_green.jpg);
+}
+#order_sheet>#form>div.color>input[type="radio"]#red + label:after{
+	background-image: url(../img/color/red.jpg);
+}
+#order_sheet>#form>div.color>input[type="radio"]#yellow_orange + label:after{
+	background-image: url(../img/color/yellow_orange.jpg);
+}
+#order_sheet>#form>div.color>input[type="radio"]#pink + label:after{
+	background-image: url(../img/color/pink.jpg);
+}
+#order_sheet>#form>div.color>input[type="radio"]#purple + label:after{
+	background-image: url(../img/color/purple.jpg);
+}
+#order_sheet>#form>div.color>input[type="radio"]#antique + label:after{
+	background-image: url(../img/color/antique.jpg);
+}
+#order_sheet>#form>div.color>input[type="radio"]#count_on + label:after{
+	background-image: url(../img/color/count_on.jpg);
+}
+#order_sheet>#form>div.color>input[type="radio"]#orchid_white + label:after{
+	background-image: url(../img/color/orchid_white.jpg);
+}
+#order_sheet>#form>div.color>input[type="radio"]:checked + label:after{
+	opacity:1;
+}
+.required.empty{
+	border-color: #E55 !important;
+}
+
+#order_sheet>.err>*{
+	display:none;
+}
+#order_sheet>.err>p{
+	font-size: 14px;
+	color: #e55;
+	margin: 10px 5%;
+	text-align:right;
+}
+
+/*------------------------------------------------------------------------
+		reset
+------------------------------------------------------------------------*/
+html,body{margin:0;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary/*,time*/,mark,audio,video{margin:0;padding:0;border:0;font-style:normal;font-weight:normal;/*font-size:100%;*/vertical-align:baseline;}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+html{overflow-y:scroll;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+input,textarea,{margin:0;padding:0;}
+ol,ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+a:focus{outline:none;}
+.clearfix:after{content:"";display:block;clear:both;height:0;visibility:hidden;}
+.clearfix{min-height:1px;}
+*html.clearfix{height:1px;/*¥*//*/height:auto;overflow:hidden;/**/}
+.inline_block{display:inline-block;*display:inline;*zoom:1;}
+*{box-sizing:border-box;}
+
+/*iPhoneで選択部分背景が黒半透明になることと、ポートレートからランドスケープにしたときに文字サイズが大きくなることをリセット*/
+*{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-text-size-adjust:100%;
+}
+
+*{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline:none;
+}
+
+select::-ms-expand {/*IE10以上矢印消去*/
+	display: none !important;
+}
